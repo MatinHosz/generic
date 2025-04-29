@@ -6,8 +6,8 @@ public abstract class Product {
     private String id;
 
     public Product(String title, Double price) {
-        this.title = title;
-        this.price = price;
+        setTitle(title);
+        setPrice(price);
         this.id = generateId();
     }
 
