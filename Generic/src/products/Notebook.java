@@ -1,11 +1,11 @@
 package products;
 
 public class Notebook extends Product {
-    private static int counter = 0;  // شمارنده‌ی ترتیبی برای دفترها
+    private static int counter = 0;
 
     private int pages;
     private String size;
-    private String type;  // مثلاً خط‌دار، بی‌خط، نقاشی
+    private String type;
 
     public Notebook(String title, Double price, int pages, String size, String type) {
         super(title, price);
