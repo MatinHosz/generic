@@ -9,9 +9,9 @@ public class Book extends Product {
 
     public Book(String title, Double price, String author, String publication, String genre) {
         super(title, price);
-        this.author = author;
-        this.publication = publication;
-        this.genre = genre;
+        setAuthor(author);
+        setPublication(publication);
+        setGenre(genre);
     }
 
     // Getters and setters...
