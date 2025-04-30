@@ -44,6 +44,8 @@ public abstract class Product {
             throw new IllegalArgumentException("Invalid input. id cannot be null or empty.");
         if (id.length() != 4)
             throw new IllegalArgumentException("Invalid input. id length must be 4.");
+
+        this.id = id;
     }
 
     protected abstract String generateId();
