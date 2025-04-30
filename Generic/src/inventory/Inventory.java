@@ -48,8 +48,10 @@ public class Inventory<T extends Product> {
             if (product.getTitle().equalsIgnoreCase(productName)) {
                 double newPrice = product.getPrice() * (1 - discount / 100.0);
                 product.setPrice(newPrice);
+                return;
             }
         }
+        System.out.println("Product: " + productName + " not found!");
     }
 
     public void displayAll() {
