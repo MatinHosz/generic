@@ -1,6 +1,7 @@
 package products;
 
 public class Accessory extends Product {
+    private static int idCounter = 1;
     private String color;
 
     public Accessory(String title, Double price, String color) {

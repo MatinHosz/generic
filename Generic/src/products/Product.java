@@ -1,8 +1,6 @@
- package products;
+package products;
 
 public abstract class Product {
-    protected static int idCounter = 1;
-
     private String title;
     private Double price;
     private String id;
@@ -10,10 +8,8 @@ public abstract class Product {
     public Product(String title, Double price) {
         setTitle(title);
         setPrice(price);
-        setId(generateId());
     }
 
-    // Getters
     public String getTitle() {
         return title;
     }
@@ -26,7 +22,6 @@ public abstract class Product {
         return id;
     }
 
-    // Setters
     public void setTitle(String title) {
         if (title == null || title.isEmpty())
             throw new IllegalArgumentException("Invalid input. title cannot be null or empty.");

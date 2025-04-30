@@ -1,6 +1,7 @@
 package products;
 
 public class Notebook extends Product {
+    private static int idCounter = 1;
     private int pageCount;
     private boolean isHardCover;
 
@@ -32,16 +33,16 @@ public class Notebook extends Product {
     }
 
     @Override
+    protected String generateId() {
+        return String.format("2%03d", idCounter++);
+    }
+
+    @Override
     public String toString() {
         return "Notebook [ID=" + getId() +
                 ", Title=" + getTitle() +
                 ", Price=" + getPrice() +
                 ", Page Count=" + pageCount +
                 ", Hardcover=" + (isHardCover ? "Yes" : "No") + "]";
-    }
-
-    @Override
-    protected String generateId() {
-        return String.format("2%03d", idCounter++);
     }
 }
