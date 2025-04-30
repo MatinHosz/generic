@@ -12,6 +12,7 @@ public class Book extends Product {
         setAuthor(author);
         setPublication(publication);
         setGenre(genre);
+        setId(generateId());
     }
 
     // Getters and setters...
