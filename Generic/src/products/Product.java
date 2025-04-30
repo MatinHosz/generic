@@ -1,6 +1,8 @@
  package products;
 
 public abstract class Product {
+    protected static int idCounter = 1;
+
     private String title;
     private Double price;
     private String id;

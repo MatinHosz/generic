@@ -1,8 +1,6 @@
 package products;
 
 public class Accessory extends Product {
-    private static int counter = 0;
-
     private String color;
 
     public Accessory(String title, Double price, String color) {
@@ -23,8 +21,7 @@ public class Accessory extends Product {
 
     @Override
     protected String generateId() {
-        counter++;
-        return String.format("3%03d", counter);
+        return String.format("3%03d", idCounter++);
     }
 
     @Override

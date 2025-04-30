@@ -4,8 +4,6 @@ public class Notebook extends Product {
     private int pageCount;
     private boolean isHardCover;
 
-    private static int idCounter = 1;
-
     public Notebook(String title, Double price, int pageCount, boolean isHardCover) {
         super(title, price);
         setPageCount(pageCount);

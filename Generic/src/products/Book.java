@@ -1,8 +1,6 @@
 package products;
 
 public class Book extends Product {
-    private static int counter = 0;
-
     private String author;
     private String publication;
     private String genre;
@@ -46,11 +44,9 @@ public class Book extends Product {
         this.genre = genre;
     }
 
-    // Generate sequential ID starting with "1"
     @Override
     protected String generateId() {
-        counter++;
-        return String.format("1%03d", counter);
+        return String.format("1%03d", idCounter++);
     }
 
     @Override
